@@ -1,4 +1,4 @@
-# How-to setup Windows 10 with WSL2 to speedup Symfony development
+# How-to setup Windows 10 with WSL2 to speed up Symfony development
 
 #### 1. Install Windows 10 build 2004 (before official release you must join Windows Insider)
 
