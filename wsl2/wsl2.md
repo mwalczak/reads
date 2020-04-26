@@ -25,13 +25,14 @@ sudo apt install docker-compose
 
 #### Pros:
 - Huge impact on symfony loading speed (see performance tests below)
-- Way quicker local dev stack using docker-compose, see example [stack](https://github.com/mwalczak/cards/blob/master/docker-compose-dist.yml) and no need to install dependencies locally
+- Way quicker local dev stack using docker-compose and no need to install dependencies locally, see example [stack](https://github.com/mwalczak/cards/blob/master/docker-compose-dist.yml) 
 - Now you can start developing Symfony using full docker env in Windows. All docker-compose projects run within WSL are in Windows docker ![dashboard](screens/docker_windows.png)
+- Multiple projects development is possible and quite easy (I use different ports exposed in coker-compose.yml) 
 
 #### Cons:
 - Slower file sync in IDE can sometimes make DIE (ex. PhpStorm) unstable
 
-#### Performance tests
+#### Performance tests (using on of my projects):
 - WSL1 with local php: ![wsl1](screens/revhunter_tests_wsl1.png)
 - WSL2 with full docker env (first with install and second run): ![wsl2](screens/revhunter_tests_wsl2.png)
 - Symfony5 full stack loading time: ![sf5](screens/symfony_time.png)
